@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <script>
+      var a = 5;
+      let b = 10;
+      const c = 15;
+
+      document.write(a, b, c + "<br>");
+      document.write(b + "<br>");
+      document.write(c + "<br><br>");
+
+      document.write(a = 20);
+      document.write("<br>");
+      document.write(b = 66 + "<br>");
+      document.write(a + "<br><br><br>");
+
+      if (a == 20 ){
+        var z = 200;
+        document.write(b + "<br>"); //66
+      }
+      else {
+        var z = 200
+        document.write(c + "<br>"); //15
+      }
+
+      document.write("<br>" + z); //200
+    </script>
+  </body>
+</html>
