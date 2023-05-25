@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        var array = ["dog", "lion", "cat", "tiger"]; <br>
+        demo.pop(); <br>
+        demo.push("cat");  <br>
+        demo.toString();  <br>
+        demo.length;  <br>
+        array.shift(); <br>
+        array.unshift("sparrow"); <br>
+        array[0] = "Cheetah";  //replace data <br> 
+        array[array.length] = "Elephant";  <br>
+        delete array[0];  //leaves undefined space - use pop push  <br>
+        let array3 = array.concat(array2)  <br>
+        let array3 = array.concat("panda") <br>
+        array.join("*") <br>
+        NewArray = Array.flat(); <br>
+        array.splice(4,0,"hippopotamus", "monkey"); <br>
+        array.splice(0, 1); //clever way to avoid undefined space after deleting <br>
+        let array4 = array.slice(3) <br>
+        let array5 = array.slice(3, 6); //last not included <br>
+        toString = Default <br>    
+        document.write(array3.sort()); <br>
+        document.write(array3.reverse()); <br>
+        document.write(maxnum(numarray)); <br>
+        document.write(minnum(numarray)); <br>
+
+        function maxnum(arr) {
+            return Math.max.apply(null, arr);
+          }
+          function minnum(arr) {
+            return Math.min.apply(null, arr);
+          }  <br>
+
+          document.write(numarray.map(myfun) + "<br><br>");
+
+        function myfun(value, index, array) {
+            return (value * 10) ;
+        } <br>
+
+        document.write(numarray.flatMap((x) => x * 2) + "<br><br>");  <br>
+
+        document.write(numarray.filter((x) => x > 50) + "<br><br>"); <br>
+
+        document.write(numarray.reduce((total, 5000) => total + value) + "<br><br>"); <br>
+
+        document.write(numarray.every(myfun) + "<br><br>");
+
+      function myfun(value, index, array){
+        return value = value > 2;
+      }  <br>
+
+      document.write(numarray.some(myfun) + "<br><br>");
+
+      function myfun(value, index, array){
+        return value = value > 90;
+      }   <br>
+
+      document.write(array3.indexOf("tiger") + "<br>" + "<br>"); <br>
+
+      document.write(array3.lastIndexOf("crocks") + "<br>" + "<br>");  <br>
+
+      var numarray = [3, 8, 66, 43, 87, 9, 56, 253, 7675];
+      document.write(numarray.find(myfun) + "<br><br>");
+
+      function myfun(value, index, array){
+        return value = value > 70;
+      }             <br>
+
+      var numarray = [3, 8, 66, 43, 87, 9, 56, 253, 7675];
+      document.write(numarray.findIndex(myfun) + "<br><br>");
+
+      function myfun(value, index, array){
+        return value = value > 90;
+      }             <br>
+
+      var samplearray = Array.from("SagarTambatkar");
+      document.write(samplearray + "<br><br>");  <br>
+
+      document.write(array3.keys() + "<br>" + "<br>")
+
+      keys = array3.keys();
+
+      let text = "";
+      for (let x of keys){
+        text =+ x + "<br>";
+        document.write(text);
+
+      }             <br>
+
+
+      document.write(array3.entries() + "<br>" + "<br>")
+
+      let abc = array3.entries();
+
+      for (let x of abc){
+    
+        document.write(x + "<br>");
+
+      }         <br>
+
+      document.write(array3.includes("lion"));   <br>
+
+      const q1 = ["Jan", "Feb", "Mar"];
+      const q2 = ["Apr", "May", "Jun"];
+      const q3 = ["Jul", "Aug", "Sept"];
+      const q4 = ["Oct", "Nov", "Dec"];
+
+      Years = [...q1, ...q2, ...q3, ...q4]
+      document.write(Years)     <br>
+
+      
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    </p>
+</body>
+</html>

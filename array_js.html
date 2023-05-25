@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Loop</title>
+  </head>
+  <body>
+    <script>
+      var array = ["dog", "lion", "cat", "tiger"];
+      array.unshift("sparrow");
+      array[0] = "cheetah";
+      array[array.length] = "elephant";
+      var array2 = ["pigeon", "snake", "crocks", "crocks", "girraffe"];
+      let array3 = array.concat(array2);
+
+      document.write(array3 + "<br>" + "<br>");
+
+      document.write(array3.sort() + "<br>" + "<br>");
+      document.write(array3.reverse() + "<br>" + "<br>");
+
+      
+      const q1 = ["Jan", "Feb", "Mar"];
+      const q2 = ["Apr", "May", "Jun"];
+      const q3 = ["Jul", "Aug", "Sept"];
+      const q4 = ["Oct", "Nov", "Dec"];
+
+      Years = [...q1, ...q2, ...q3, ...q4]
+      document.write(Years)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+      document.write(array3.entries() + "<br>" + "<br>")
+
+      let abc = array3.entries();
+
+      for (let x of abc){
+    
+        document.write(x + "<br>");
+
+      } */
+
+     /*  var numarray = [3, 8, 66, 43, 87, 9, 56, 253, 7675];
+      document.write(numarray.some(myfun) + "<br><br>");
+
+      function myfun(value, index, array){
+        return value = value > 90;
+      } */
+      
+     
+
+      /* var numarray = [3, 8, 66, 43, 87, 9, 56, 253, 7675];
+      document.write(maxnum(numarray) + "<br>" + "<br>");
+      document.write(minnum(numarray) + "<br>" + "<br>"); */
+
+      /* document.write(array);
+      document.write("<br>");
+      document.write("<br>");
+      document.write("Type of Array:", typeof array);
+      document.write("<br>");
+      document.write("<br>");
+      document.write("Array Length:", array.length);
+      document.write("<br>");
+      document.write("<br>");
+      document.write(array3);
+      document.write("<br>");
+      document.write("<br>");
+      document.write(array.join("*"));
+      document.write("<br>");
+      document.write("<br>");
+      array.splice(4,0,"hippopotamus", "monkey");
+      document.write(array);
+      document.write("<br>");
+      document.write("<br>");
+      document.write(array)
+      document.write("<br>");
+      let array4 = array.slice(3)
+      document.write(array4)
+      document.write("<br>");
+      let array5 = array.slice(3, 6);
+      document.write(array5); */
+      /*  function maxnum(arr) {
+        return Math.max.apply(null, arr);
+      }
+      function minnum(arr) {
+        return Math.min.apply(null, arr);
+      } */
+    </script>
+  </body>
+</html>
